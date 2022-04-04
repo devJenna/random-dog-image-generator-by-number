@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Baloo 2', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+    background-color: blanchedalmond;
+
+    text-align: center;
+}
+
+p,
+.number-input,
+.generate-button {
+    font-size: 1rem;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    padding: 2rem;
+}
+
+.input-container {
+    width: 300px;
+    height: 35px;
+    display: flex;
+    /* justify-content: center; */
+    justify-content: space-evenly;
+    align-items: center;
+
+    margin: 1rem;
+}
+
+.generated {
+    width: 200px;
+    height: 200px;
+
+    /* display: flex;
+    flex-direction: row; */
+    margin: 1rem;
+
+    background-color: black;
+    color: white;
+    border: 3px solid black;
+    border-radius: 10px;
+}
+
+.number-input {
+    outline: none;
+    border-style: none;
+    /* width: 70px; */
+    width: 160px;
+    height: 100%;
+    padding: 0.25rem 0.5rem;
+    border: 1px solid slateblue;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.generate-button {
+    outline: none;
+    border-style: none;
+    background-color: slateblue;
+    color: white;
+
+    cursor: pointer;
+
+    height: 100%;
+    padding: 0.25rem 0.5rem;
+    border-radius: 5px;
+}
+
+.generate-button:hover {
+    background-color: rgb(224, 85, 85);
+}
+
+.generate-button:active {
+    transform: scale(0.95);
+}
