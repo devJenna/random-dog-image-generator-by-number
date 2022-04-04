@@ -20,6 +20,10 @@ generateButton.addEventListener("click", fetchImages);
 number.addEventListener("keydown", enterKey);
 
 function enterKey(e) {
+    if (e.key == "-") {
+        e.preventDefault();
+        return false;
+    }
     if (e.keyCode === 13) {
         e.preventDefault();
         fetchImages(e);
